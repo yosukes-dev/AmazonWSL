@@ -1,35 +1,29 @@
-# FedoraWSL2
-Fedora on WSL2 (Windows 10 builds 18917 or higher)
+# AmazonWSL
+Amazon Linux on WSL (Windows 10 FCU or later)
 based on [wsldl](https://github.com/yuk7/wsldl)
 
-![screenshot](https://raw.githubusercontent.com/yosukes-dev/FedoraWSL2/master/img/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/yosukes-dev/AmazonWSL/master/img/screenshot.png)
 
-[![CircleCI](https://circleci.com/gh/yosukes-dev/FedoraWSL2.svg?style=svg)](https://circleci.com/gh/yosukes-dev/FedoraWSL2)
-[![Github All Releases](https://img.shields.io/github/downloads/yosukes-dev/FedoraWSL2/total.svg?style=flat-square)](https://github.com/yosukes-dev/FedoraWSL2/releases)
+[![CircleCI](https://circleci.com/gh/yosukes-dev/AmazonWSL.svg?style=svg)](https://circleci.com/gh/yosukes-dev/AmazonWSL)
+[![Github All Releases](https://img.shields.io/github/downloads/yosukes-dev/AmazonWSL/total.svg?style=flat-square)](https://github.com/yosukes-dev/AmazonWSL/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![License](https://img.shields.io/github/license/yosukes-dev/FedoraWSL2.svg?style=flat-square)
+![License](https://img.shields.io/github/license/yosukes-dev/AmazonWSL.svg?style=flat-square)
 
-### [Download](https://github.com/yosukes-dev/FedoraWSL2/releases)
+### [Download](https://github.com/yosukes-dev/AmazonWSL/releases)
 
 
 ## Requirements
-* Windows 10 builds 18917 or higher. (Testing with build 19551)
+* Windows 10 Fall Creators Update x64 or later. (Testing with build 19551)
 * Windows Subsystem for Linux feature is enabled.
 
 ## Install
-#### 1. [Download](https://github.com/yosukes-dev/FedoraWSL2/releases) installer zip
+#### 1. [Download](https://github.com/yosukes-dev/AmazonWSL/releases) installer zip
 
 #### 2. Extract all files in zip file to same directory
 
-#### 3.Run Fedora.exe to Extract rootfs and Register to WSL
+#### 3.Run Amazon.exe to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
 If you rename it you can register with a diffrent name and have multiple installs.
-
-## Important
-If the default version of WSL is 1, convert it with the following command.
-```dos
-wsl --set-version Fedora 2
-```
 
 ## How-to-Use(for Installed Instance)
 #### exe Usage
@@ -70,6 +64,6 @@ Usage :
 
 #### How to uninstall instance
 ```dos
->Fedora.exe clean
+>Amazon.exe clean
 
 ```
