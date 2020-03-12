@@ -21,9 +21,23 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 
 #### 2. Extract all files in zip file to same directory
 
-#### 3.Run Amazon.exe to Extract rootfs and Register to WSL
+#### 3.Run Amazon2.exe to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
 If you rename it you can register with a diffrent name and have multiple installs.
+
+## Icon settings for Windows Terminal
+![terminal-icon](https://raw.githubusercontent.com/yosukes-dev/AmazonWSL/master/img/terminal-icon.png)
+
+The following is an example of `profiles.json` if you extracted to `C:\`
+```
+{
+    "guid": "{dc13e3b1-2863-5b9b-9749-3a31bc67a12a}",
+    "hidden": false,
+    "name": "Amazon2",
+    "source": "Windows.Terminal.Wsl",
+    "icon": "C:\\Amazon2\\assets\\icon.png"
+}
+```
 
 ## How-to-Use(for Installed Instance)
 #### exe Usage
@@ -64,6 +78,9 @@ Usage :
 
 #### How to uninstall instance
 ```dos
->Amazon.exe clean
+>Amazon2.exe clean
 
 ```
+
+## Copyright notice
+The icon by http://uiconstock.com/
