@@ -13,7 +13,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 
 
 ## Requirements
-* Windows 10 Fall Creators Update x64 or later. (Testing with build 19631)
+* Windows 10 Fall Creators Update x64 or later. 
 * Windows Subsystem for Linux feature is enabled.
 
 ## Install
@@ -57,11 +57,14 @@ Usage :
       - `--default-uid <uid>`: Set the default user uid for this distro to <uid>
       - `--append-path <on|off>`: Switch of Append Windows PATH to $PATH
       - `--mount-drive <on|off>`: Switch of Mount drives
+      - `--default-term <default|wt|flute>`: Set default terminal window
 
     get [setting]
       - `--default-uid`: Get the default user uid in this distro
       - `--append-path`: Get on/off status of Append Windows PATH to $PATH
       - `--mount-drive`: Get on/off status of Mount drives
+      - `--wsl-version`: Get WSL Version 1/2 for this distro
+      - `--default-term`: Get Default Terminal for this distro launcher
       - `--lxguid`: Get WSL GUID key for this distro
 
     backup [contents]
@@ -75,6 +78,36 @@ Usage :
       - Print this usage message.
 ```
 
+#### Just Run exe
+```cmd
+>Amazon2.exe
+[root@PC-NAME user]#
+```
+
+#### Run with command line
+```cmd
+>Amazon2.exe run uname -r
+4.4.0-43-Microsoft
+```
+
+#### Run with command line with path translation
+```cmd
+>Amazon2.exe runp echo C:\Windows\System32\cmd.exe
+/mnt/c/Windows/System32/cmd.exe
+```
+
+#### Change Default User(id command required)
+```cmd
+>Amazon2.exe config --default-user user
+
+>Amazon2.exe
+[user@PC-NAME dir]$
+```
+
+#### Set "Windows Terminal" as default terminal
+```cmd
+>Amazon2.exe config --default-term wt
+```
 
 #### How to uninstall instance
 ```dos
