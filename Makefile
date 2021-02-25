@@ -38,7 +38,7 @@ rootfs: base.tar
 
 base.tar:
 	@echo -e '\e[1;31mExporting base.tar using docker...\e[m'
-	docker run --name amazonwsl library/amazonlinux:2.0.20210219.0 /bin/bash -c "yum update -y; yum install -y util-linux-ng; amazon-linux-extras install -y kernel-ng; yum clean all; rm -rf /var/cache/yum; pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow;"
+	docker run --name amazonwsl library/amazonlinux:2.0.20210219.0 /bin/bash -c "yum update -y; yum install -y util-linux-ng; yum clean all; rm -rf /var/cache/yum; pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow;"
 	docker export --output=base.tar amazonwsl
 	docker rm -f amazonwsl
 
