@@ -114,6 +114,3 @@ Usage :
 >Amazon2.exe clean
 
 ```
-
-## Copyright notice
-The icon by http://uiconstock.com/
