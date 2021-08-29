@@ -3,7 +3,7 @@ LNCR_EXE=Amazon2.exe
 
 DLR=curl
 DLR_FLAGS=-L
-LNCR_URL=https://github.com/yuk7/wsldl/releases/download/21020500/Launcher.exe
+LNCR_URL=https://github.com/yuk7/wsldl/releases/download/21082800/Launcher.exe
 
 all: $(OUT_ZIP)
 
@@ -38,7 +38,7 @@ rootfs: base.tar
 
 base.tar:
 	@echo -e '\e[1;31mExporting base.tar using docker...\e[m'
-	docker run --name amazonwsl library/amazonlinux:2.0.20210421.0 /bin/bash -c "yum update -y; yum install -y util-linux-ng; yum clean all; rm -rf /var/cache/yum; pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow;"
+	docker run --name amazonwsl library/amazonlinux:2.0.20210721.2 /bin/bash -c "yum update -y; yum install -y util-linux-ng; yum clean all; rm -rf /var/cache/yum; pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow;"
 	docker export --output=base.tar amazonwsl
 	docker rm -f amazonwsl
 
@@ -50,4 +50,4 @@ clean:
 	-rm rootfs.tar.gz
 	-sudo rm -r rootfs
 	-rm base.tar
-	-docker rmi amazonlinux:2.0.20210421.0
+	-docker rmi amazonlinux:2.0.20210721.2
