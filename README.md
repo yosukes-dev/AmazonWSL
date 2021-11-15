@@ -96,8 +96,13 @@ Usage :
 /mnt/c/Windows/System32/cmd.exe
 ```
 
-#### Change Default User(id command required)
+#### Change Default User
+
+_Note: Replace `user` with your chosen user name._
+
 ```cmd
+>Amazon2.exe run useradd -m -g users -G wheel -s /bin/bash user
+
 >Amazon2.exe config --default-user user
 
 >Amazon2.exe
