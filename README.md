@@ -96,7 +96,9 @@ Usage :
 /mnt/c/Windows/System32/cmd.exe
 ```
 
-#### Change Default User
+#### Change Default User(id command required)
+
+The following is an example of adding a user to the "users" and "wheel" groups and setting it as the default user
 
 _Note: Replace `user` with your chosen user name._
 
