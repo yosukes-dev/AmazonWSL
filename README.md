@@ -11,6 +11,9 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 
 ### [Download](https://github.com/yosukes-dev/AmazonWSL/releases)
 
+## An instruction on AWS Developer Tools Blog
+The following link is to an article on the AWS Developer Tools Blog describing development with AmazonWSL.    
+[Developing on Amazon Linux 2 using Windows - AWS Developer Tools Blog](https://aws.amazon.com/jp/blogs/developer/developing-on-amazon-linux-2-using-windows/)
 
 ## Requirements
 * Windows 10 Fall Creators Update x64 or later. 
