@@ -16,5 +16,5 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
-          tag: "v2023.2.20230920.1"
+          tag: "v2023.3.20231218.0"
           artifacts: "AL2023.zip"
