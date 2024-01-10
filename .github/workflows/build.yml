@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Make
+        run: make all
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: "v2023.3.20231218.0"
+          artifacts: "AL2023.zip"

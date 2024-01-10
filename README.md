@@ -24,7 +24,7 @@ The following link is to an article on the AWS Developer Tools Blog describing d
 
 #### 2. Extract all files in zip file to same directory
 
-#### 3.Run Amazon2.exe to Extract rootfs and Register to WSL
+#### 3.Run AL2023.exe to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
 If you rename it you can register with a diffrent name and have multiple installs.
 
@@ -83,19 +83,19 @@ Usage :
 
 #### Just Run exe
 ```cmd
->Amazon2.exe
+>AL2023.exe
 [root@PC-NAME user]#
 ```
 
 #### Run with command line
 ```cmd
->Amazon2.exe run uname -r
+>AL2023.exe run uname -r
 4.4.0-43-Microsoft
 ```
 
 #### Run with command line with path translation
 ```cmd
->Amazon2.exe runp echo C:\Windows\System32\cmd.exe
+>AL2023.exe runp echo C:\Windows\System32\cmd.exe
 /mnt/c/Windows/System32/cmd.exe
 ```
 
@@ -106,21 +106,21 @@ The following is an example of adding a user to the "users" and "wheel" groups a
 _Note: Replace `user` with your chosen user name._
 
 ```cmd
->Amazon2.exe run useradd -m -g users -G wheel -s /bin/bash user
+>AL2023.exe run useradd -m -g users -G wheel -s /bin/bash user
 
->Amazon2.exe config --default-user user
+>AL2023.exe config --default-user user
 
->Amazon2.exe
+>AL2023.exe
 [user@PC-NAME dir]$
 ```
 
 #### Set "Windows Terminal" as default terminal
 ```cmd
->Amazon2.exe config --default-term wt
+>AL2023.exe config --default-term wt
 ```
 
 #### How to uninstall instance
 ```dos
->Amazon2.exe clean
+>AL2023.exe clean
 
 ```
